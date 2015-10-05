@@ -1,0 +1,19 @@
+{
+  "name": "rainflex",
+  "version": "0.0.0",
+  "homepage": "https://github.com/a-type/rainflex",
+  "authors": [
+    "Grant Forrest <a-type@outlook.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lesshat": "~3.0.2"
+  }
+}

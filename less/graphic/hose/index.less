@@ -1,0 +1,26 @@
+@hose-width: 24px;
+@hose-color: blue;
+
+.hose-bend-upper {
+	position: absolute;
+	left: 0;
+	top: 5vh;
+
+	width: 50vw;
+	height: 70vh;
+	border-left: @hose-width solid @hose-color;
+	border-bottom: @hose-width solid @hose-color;
+	border-radius: @hose-width / 2;
+}
+
+.hose-bend-lower {
+	position: absolute;
+	right: 0;
+	top: 75vh;
+
+	width: 50vw;
+	height: 125vh;
+	border-top: @hose-width solid @hose-color;
+	border-right: @hose-width solid @hose-color;
+	border-radius: @hose-width / 2;
+}

@@ -1,0 +1,38 @@
+.content {
+	.section {
+		.section-content.bio {
+			.display(flex);
+			background-color: @color-white;
+			margin-top: 24px;
+
+			color: @color-black;
+
+			font-size: 1em;
+
+			h1 {
+				font-size: 2em;
+			}
+
+			div {
+				margin: auto 14px;
+			}
+
+			.avatar-container {
+				.avatar {
+					border-radius: 100%;
+					max-height: 220px;
+					max-width: 50%;
+					width: auto;
+				}
+			}
+
+			@media only screen and (max-device-width: @phone-screen) {
+				font-size: 2em;
+
+				h1 {
+					font-size: 3em;
+				}
+			}
+		}
+	}
+}

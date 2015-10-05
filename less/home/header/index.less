@@ -1,0 +1,54 @@
+.sticky-header {
+	.display(flex);
+	background: @color-white;
+
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 96px;
+
+	overflow: hidden;
+
+	transition: height 0.5s;
+
+	.logo {
+		margin: 8px;
+
+		height: 80px;
+		width: auto;
+	}
+}
+
+.scrolled-top {
+	.sticky-header {
+		height: 0;
+	}
+}
+
+.header {
+	.display(flex);
+	background: @color-white;
+
+	width: 100%;
+	height: 85vh;
+
+	.flex-direction(row);
+
+	.logo-container {
+		margin: auto;
+		display: flex;
+		width: auto;
+	}
+
+	.logo {
+		margin: auto;
+		max-width: 25%;
+		max-height: 100%;
+
+		@media only screen and (max-device-width: @tablet-screen) {
+			max-width: 80%;
+		}
+	}
+}
