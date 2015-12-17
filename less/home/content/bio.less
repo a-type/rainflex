@@ -1,30 +1,22 @@
-.content {
-	.section {
-		.section-content.bio {
-			.display(flex);
-			background-color: @color-white;
-			margin-top: 24px;
+.bio {
+	.display(flex);
+	justify-content: center;
+	background-color: @color-white;
+	padding: 24px;
+	color: @color-black;
 
-			color: @color-black;
+	font-size: 1em;
 
-			font-size: 1em;
+	h1 {
+		font-size: 2em;
+	}
 
-			h1 {
-				font-size: 2em;
-			}
-
-			div {
-				margin: auto 14px;
-			}
-
-			.avatar-container {
-				.avatar {
-					border-radius: 100%;
-					max-height: 220px;
-					max-width: 50%;
-					width: auto;
-				}
-			}
+	.avatar-container {
+		.avatar {
+			border-radius: 100%;
+			max-height: 220px;
+			max-width: 50%;
+			width: auto;
 		}
 	}
 }

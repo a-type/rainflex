@@ -23,6 +23,19 @@
     "jit-grunt": "^0.9.1"
   },
   "dependencies": {
-    "bower": "^1.4.1"
+    "bower": "^1.4.1",
+    "express": "^4.13.3",
+    "gulp": "^3.9.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-less": "^3.0.3",
+    "gulp-livereload": "^3.8.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.5",
+    "lodash": "^3.10.1",
+    "open": "0.0.5",
+    "react": "^0.14.1",
+    "react-dom": "^0.14.1",
+    "reactify": "^1.1.1"
   }
 }

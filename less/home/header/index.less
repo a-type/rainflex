@@ -1,7 +1,7 @@
 @header-height: 96px;
 
-.sticky-header {
-	.display(flex);
+.header-sticky {
+	display: none;
 	background: @color-white;
 
 	position: fixed;
@@ -21,36 +21,14 @@
 		height: 80px;
 		width: auto;
 	}
+
+	&.show {
+		.display(flex);
+	}
 }
 
 .scrolled-top {
 	.sticky-header {
 		height: 0;
-	}
-}
-
-.header {
-	.display(flex);
-	background: @color-white;
-
-	width: 100%;
-	height: 85vh;
-
-	.flex-direction(row);
-
-	.logo-container {
-		margin: auto;
-		display: flex;
-		width: auto;
-	}
-
-	.logo {
-		margin: auto;
-		max-width: 25%;
-		max-height: 100%;
-
-		@media only screen and (max-device-width: @tablet-screen) {
-			max-width: 80%;
-		}
 	}
 }
