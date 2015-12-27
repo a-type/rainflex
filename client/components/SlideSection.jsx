@@ -6,7 +6,7 @@ var INACTIVE_SPACING = 20;
 var SlideSection = React.createClass({
 	render: function() {
 		var className = 'slide-section ' + (this.props.active ? 'slide-section-active' : '');
-		var imageStyle = { backgroundImage : 'url("' + (this.props.image || '/img/bg1.jpg') + '")' };
+		var imageStyle = { backgroundImage : 'url("' + (this.props.image || 'img/bg1.jpg') + '")' };
 
 		return (
 			<div className={className} onClick={this.props.onClick} style={imageStyle}>

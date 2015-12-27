@@ -9,7 +9,7 @@ var SlideDisplay = React.createClass({
 
 	render : function () {
 		if (this.props.section) {
-			var imageStyle = { backgroundImage : 'url("' + (this.props.section.image || '/img/bg1.jpg') + '")' };
+			var imageStyle = { backgroundImage : 'url("' + (this.props.section.image || 'img/bg1.jpg') + '")' };
 
 			return (
 				<div className='slide-display-modal active' onClick={this.props.close}>
