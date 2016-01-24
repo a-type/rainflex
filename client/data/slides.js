@@ -105,7 +105,8 @@ module.exports = [
 			},
 			{
 				title : "Zero-Energy System",
-				text : "The Siphon Pump draws stored rainwater using only the power of your spigot!"
+				text : "The Siphon Pump draws stored rainwater using only the power of your spigot!",
+                image : "img/pump.png"
 			},
 			{
 				title : "Automatically Switches when Empty",

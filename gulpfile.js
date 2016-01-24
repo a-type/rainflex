@@ -76,6 +76,4 @@ gulp.task('watch', function() {
 	gulp.watch('less/**', ['styles'])
 });
 
-gulp.task('run', [ 'default', 'serve' ]);
-
 gulp.task('default', ['html', 'scripts', 'styles', 'images', 'fonts']);

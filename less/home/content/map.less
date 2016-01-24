@@ -1,3 +1,5 @@
+@map-size: 80px;
+
 .slide {
 	background: @color-gray;
 	margin: 10vh 16px;
@@ -129,8 +131,10 @@
 	left: 0;
 	right: 0;
 
-	background: @color-white;
+	background: fade(black, 50%);
 	overflow-y: hidden;
+    
+    z-index: 500;
 
 	&.active {
 		bottom: 0;
@@ -142,21 +146,50 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background-size: cover;
-		padding: 64px;
-
-		.slide-display-title {
-			font-size: 2em;
-			color: @color-white;
-			background: fade(black, 50%);
-			padding: 16px;
-		}
+		padding: @map-size;
+        .display(flex);
+        flex-direction: row;
+        
+        box-shadow: 4px 0 0 0 black;
 
 		.slide-display-content {
-			background: fade(black, 50%);
+			background: black;
 			color: @color-white;
 			padding: 16px;
+            flex: 1;
+            
+            .display(flex);
+            flex-direction: column;
+            
+            .slide-display-title {
+                font-size: 2em;
+                color: @color-white;
+                margin-bottom: 32px;
+                font-weight: bold;
+            }
+            
+            .slide-display-text {
+                font-size: 1.25em;
+            }
 		}
+        
+        .slide-display-image-container {
+            background: white;
+            flex: 3;
+            position: relative;
+            
+            .slide-display-image {
+                position: absolute;
+                transform: translate(-50%, -50%);
+                top: 50%;
+                left: 50%;
+
+                width: auto;
+                height: auto;
+                max-height: 100%;
+                max-width: 100%;
+            }
+        }
 	}
 }
 
@@ -178,13 +211,13 @@
 
 	background: @color-white;
 	padding: 8px;
-	min-height: 30vh;
-	width: 64px;
+	min-height: 50vh;
+	width: @map-size;
 
 	display: flex;
 	flex-direction: column;
 
-	z-index: 1000;
+	z-index: 100;
 	
 	@media only screen and (max-device-width: @tablet-screen) {
 		display: none;	
@@ -195,8 +228,31 @@
 		text-decoration: none;
 		color: @color-primary;
 		font-size: 1.2em;
-		height: 32px;
+		height: 48px;
+        line-height: 48px;
 		margin: auto;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        
+        .tooltip {
+            position: absolute;
+            left: 120%;
+            display: none;
+            background: @color-gray;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 4px;
+            box-shadow: 0 0 4px 0 fade(black, 25%);
+        }
+
+        &:hover {
+            background: fade(@color-primary, 50%);
+
+            .tooltip {
+                display: block;
+            }
+        }
 	}
 
 	.map-system {
@@ -218,24 +274,6 @@
 			position: relative;
 			flex: 1;
 			margin: 0;
-
-			.system-tooltip {
-				position: absolute;
-				left: 140%;
-				display: none;
-				background: @color-gray;
-				top: 50%;
-				transform: translateY(-50%);
-				padding: 4px;
-			}
-
-			&:hover {
-				background: fade(@color-primary, 50%);
-
-				.system-tooltip {
-					display: block;
-				}
-			}
 		}
 	}
 }
