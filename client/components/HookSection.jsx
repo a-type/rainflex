@@ -1,12 +1,14 @@
 var React = require('react');
 var Section = require('./Section');
+var Rotator = require('./Rotator');
 
 var HookSection = React.createClass({
 
 	render: function() {
 		return (
 			<Section className="section-bg hook-section" id="hookSection">
-				The simple,<br/>efficient,<br/><span style={{ fontFamily: 'inherit' }} className="accent">flexible</span><br/>rainwater collection solution.
+                <div>The simple,<br/>efficient,<br/><span className="accent">flexible</span><br/>rainwater collection solution.
+                </div>
 			</Section>
 		);
 	}

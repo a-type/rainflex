@@ -7,8 +7,8 @@ var Slide = React.createClass({
 
 		var sectionNodes = this.props.sections.map(function (section, idx) {
 			return (<SlideSection
-				title={section.title}
-				text={section.text}
+				title={section.subsections[0].title}
+				text={section.subsections[0].text}
 				image={section.image}
 				key={idx}
 				index={idx}
