@@ -1,0 +1,95 @@
+@font-face {
+	font-family: "Bebas Neue";
+	src: url(../font/BebasNeue.otf);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html, body {
+  margin: 0;
+}
+
+.rx-header {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.rx-box {
+  max-width: 75vw;
+  max-height: 25vh;
+  height: auto;
+  width: auto;
+  margin: auto auto 24px auto;
+}
+
+.rx-logo {
+  display: block;
+  max-height: 12vh;
+  max-width: 75vw;
+  height: auto;
+  width: auto;
+  margin: 0 auto auto auto;
+}
+
+.rx-section {
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.rx-pitch-item {
+  margin: 8px auto 8px auto;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.rx-pitch-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.rx-pitch-image {
+  width: auto;
+  height: auto;
+  max-width: 12vw;
+  max-height: 12vh;
+}
+
+.rx-creator-section {
+  flex-direction: row;
+}
+
+.rx-creator-portrait {
+  border-radius: 100%;
+  max-height: 30vh;
+  max-width: 25vw;
+  width: auto;
+  height: auto;
+  margin: auto 12px auto auto;
+}
+
+.rx-creator-bio {
+  margin: auto auto 0 auto;
+}
+
+.rx-creator-name {
+  display: block;
+}
+
+.rx-creator-text {
+  display: block;
+}
+
+.rx-creator-phone {
+  display: block;
+}
+
+.rx-creator-email {
+  display: block;
+}
